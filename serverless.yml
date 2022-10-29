@@ -1,0 +1,21 @@
+service: serverless-cart-service
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  region: eu-west-1
+  stage: dev
+  runtime: nodejs14.x
+
+functions:
+  main:
+    handler: dist/main.handler
+    events:
+      - http:
+          method: ANY
+          path: /
+      - http:
+          method: ANY
+          path: '{proxy+}'
