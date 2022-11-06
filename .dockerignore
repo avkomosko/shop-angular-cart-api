@@ -1,0 +1,24 @@
+# git files
+**/.git
+**/.gitignore
+
+# IDE configs
+**/.settings
+**/.vs
+**/.vscode
+**/.prettierrc
+
+# remove serverless files
+**/.serverless
+**/serverless.yml
+**/postgres.sql
+
+# remove node_modules as the biggest folder
+**/node_modules
+**/npm-debug.log
+
+# Dockerfile
+**/Dockerfile*
+
+#remove readme as unused file
+README.md
